@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" prefHeight="750.0" prefWidth="1000.0" style="-fx-background-color: fffafa;" styleClass="gameSuccess-borderPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameSuccessController">
+   <top>
+          <Label fx:id="messageLabel" prefHeight="22.0" prefWidth="893.0" style="-fx-font-family: IMPACT;" styleClass="gameSuccess-messageLabel" text="CONGRATULATIONS! YOU HAVE SAVED THE WORLD!!" textAlignment="CENTER" textFill="#d4af37" BorderPane.alignment="CENTER">
+              <font>
+                  <Font name="System Bold Italic" size="45.0" />
+              </font>
+         <BorderPane.margin>
+            <Insets top="30.0" />
+         </BorderPane.margin>
+         <effect>
+            <InnerShadow blurType="ONE_PASS_BOX" />
+         </effect>
+          </Label>
+   </top>
+   <bottom>
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#backButton_onClick" style="-fx-background-color: #ffffff; -fx-border-color: #d4af37;" styleClass="gameSuccess-backButton" text="BACK TO TOP" textFill="#d4af37" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets bottom="30.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+   <center>
+      <Canvas fx:id="martians2Canvas" height="500.0" width="300.0" BorderPane.alignment="TOP_CENTER" />
+   </center>
+   <left>
+      <Canvas fx:id="martians1Canvas" height="500.0" width="300.0" BorderPane.alignment="TOP_LEFT">
+         <BorderPane.margin>
+            <Insets left="50.0" />
+         </BorderPane.margin></Canvas>
+   </left>
+   <right>
+      <Canvas fx:id="martians3Canvas" height="500.0" width="300.0" BorderPane.alignment="TOP_RIGHT">
+         <BorderPane.margin>
+            <Insets right="50.0" />
+         </BorderPane.margin></Canvas>
+   </right>
+</BorderPane>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" style="-fx-background-color: #000000;" styleClass="play-borderPane" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.JAlienHunt">
+   <top>
+        <VBox prefHeight="750.0" prefWidth="1000.0" spacing="10.0">
+            <BorderPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </BorderPane.margin>
+         <children>
+            <Pane prefHeight="140.0" prefWidth="1000.0">
+               <children>
+                  <Label fx:id="scoreLabel" layoutX="820.0" layoutY="22.0" style="-fx-font-family: IMPACT;" styleClass="play-scoreLabel" text="SCORE: 0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="40.0" layoutY="-34.0" prefHeight="136.0" prefWidth="252.0">
+                     <children>
+                        <Rectangle fx:id="rectangle1" arcHeight="5.0" arcWidth="5.0" fill="#54ad7a" height="188.0" layoutX="74.0" layoutY="30.0" rotate="40.0" stroke="BLACK" strokeType="INSIDE" width="15.0">
+                           <effect>
+                              <Bloom />
+                           </effect>
+                        </Rectangle>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane prefHeight="140.0" prefWidth="1000.0">
+               <children>
+                      <Label fx:id="messageLabel" layoutX="263.0" prefHeight="77.0" prefWidth="491.0" style="-fx-font-family: IMPACT;" styleClass="play-messageLabel" text="FIND SIX MARTIANS" textAlignment="CENTER" textFill="RED">
+                          <font>
+                              <Font name="System Bold" size="62.0" />
+                          </font>
+                     <effect>
+                        <Bloom />
+                     </effect>
+                      </Label>
+               </children>
+            </Pane>
+            <GridPane prefHeight="469.0" prefWidth="1000.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="button1" mnemonicParsing="false" onAction="#button1_onClick" prefHeight="170.0" prefWidth="150.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" styleClass="play-button" text="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="20.0" top="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="button2" mnemonicParsing="false" onAction="#button2_onClick" prefHeight="170.0" prefWidth="150.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" styleClass="play-button" text="2" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="20.0" top="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="button3" mnemonicParsing="false" onAction="#button3_onClick" prefHeight="170.0" prefWidth="150.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" styleClass="play-button" text="3" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="20.0" top="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="button4" mnemonicParsing="false" onAction="#button4_onClick" prefHeight="170.0" prefWidth="150.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" styleClass="play-button" text="4" GridPane.columnIndex="3">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="20.0" top="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="button5" mnemonicParsing="false" onAction="#button5_onClick" prefHeight="170.0" prefWidth="150.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" styleClass="play-button" text="5" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="20.0" top="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="button6" mnemonicParsing="false" onAction="#button6_onClick" prefHeight="170.0" prefWidth="150.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" styleClass="play-button" text="6" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="20.0" top="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="button7" mnemonicParsing="false" onAction="#button7_onClick" prefHeight="170.0" prefWidth="150.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" styleClass="play-button" text="7" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="20.0" top="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="button8" mnemonicParsing="false" onAction="#button8_onClick" prefHeight="170.0" prefWidth="150.0" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" styleClass="play-button" text="8" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="20.0" top="10.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Label fx:id="button1Label" prefHeight="170.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" styleClass="play-buttonLabel" visible="false">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="20.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="button2Label" prefHeight="170.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" styleClass="play-buttonLabel" visible="false" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="20.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="button3Label" prefHeight="170.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" styleClass="play-buttonLabel" visible="false" GridPane.columnIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="20.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="button4Label" prefHeight="170.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" styleClass="play-buttonLabel" visible="false" GridPane.columnIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="20.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="button5Label" prefHeight="170.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" styleClass="play-buttonLabel" visible="false" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="20.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="button6Label" prefHeight="170.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" styleClass="play-buttonLabel" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="20.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="button7Label" prefHeight="170.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" styleClass="play-buttonLabel" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="20.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="button8Label" prefHeight="170.0" prefWidth="150.0" style="-fx-background-color: #ffffff;" styleClass="play-buttonLabel" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="50.0" right="20.0" top="10.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="resetButton" layoutX="458.0" layoutY="41.0" mnemonicParsing="false" onAction="#resetButton_onClick" style="-fx-background-color: #000000; -fx-border-color: #ff0000; -fx-border-width: 5;" styleClass="play-resetButton" text="RESET" textFill="RED">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                  <Rectangle fx:id="rectangle2" arcHeight="5.0" arcWidth="3.0" fill="#ffe81f" height="130.0" layoutX="880.0" layoutY="18.0" rotate="290.0" stroke="BLACK" strokeType="INSIDE" width="13.0">
+                     <effect>
+                        <Bloom />
+                     </effect>
+                  </Rectangle>
+                  <Rectangle fx:id="rectangle3" arcHeight="5.0" arcWidth="3.0" fill="#8421ff" height="120.0" layoutX="204.0" layoutY="2.0" rotate="85.0" stroke="BLACK" strokeType="INSIDE" width="13.0">
+                     <effect>
+                        <Bloom threshold="0.1" />
+                     </effect>
+                  </Rectangle>
+               </children>
+            </Pane>
+         </children>
+        </VBox>
+   </top>
+</BorderPane>

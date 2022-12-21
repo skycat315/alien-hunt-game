@@ -1,0 +1,69 @@
+.start-borderPane {
+    -fx-background-color: #000000;
+}
+
+.start-gameTitleLabel {
+    -fx-font-family: "IMPACT";
+}
+
+.start-startButton {
+    -fx-border-color: #ffff00;
+    -fx-border-width: 5.0;
+    -fx-background-color: #000000;
+}
+
+.start-highestScoreLabel {
+    -fx-font-family: "IMPACT";
+}
+
+.play-borderPane {
+    -fx-background-color: #000000;
+}
+
+.play-scoreLabel {
+    -fx-font-family: "IMPACT";
+}
+
+.play-messageLabel {
+    -fx-font-family: "IMPACT";
+}
+
+.play-button {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #000000;
+}
+
+.play-buttonLabel {
+    -fx-background-color: #ffffff;
+}
+
+.play-resetButton {
+    -fx-background-color: #000000;
+    -fx-border-color: #ff0000;
+    -fx-border-width: 5.0;
+}
+
+.gameSuccess-borderPane {
+    -fx-background-color: #fffafa;
+}
+
+.gameSuccess-messageLabel {
+    -fx-font-family: "IMPACT";
+}
+
+.gameSuccess-backButton {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d4af37;
+}
+
+.gameOver-borderPane {
+    -fx-background-color: #606060;
+}
+
+.gameOver-messageLabel {
+    -fx-font-family: "IMPACT";
+}
+
+.gameOver-backButton {
+    -fx-background-color: #000000
+}
