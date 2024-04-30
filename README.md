@@ -1,1 +1,1 @@
-# AlienHuntGame
+Java Intermediate - Final Project
